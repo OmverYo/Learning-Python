@@ -1,4 +1,4 @@
-#https://www.geeksforgeeks.org/number-guessing-game-in-python/
+# https://www.geeksforgeeks.org/number-guessing-game-in-python/
 
 import math
 import random
@@ -26,7 +26,7 @@ while count < guesses:
 
     elif guess < answer:
         print("You guessed it too small")
-    
+
     elif guess > answer:
         print("You guesses it too high")
 
