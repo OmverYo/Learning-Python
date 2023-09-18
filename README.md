@@ -10,3 +10,5 @@ reading my codes and using my basic codes.
 Hoping that I become a successful person soon enough.
 
 Thanks!
+
+Referrence: https://www.geeksforgeeks.org/python-projects-beginner-to-advanced/
