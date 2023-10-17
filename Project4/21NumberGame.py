@@ -4,6 +4,7 @@ import time
 
 def lose():
     print("You lose!")
+    time.sleep(2)
     exit(0)
 
 def start():
