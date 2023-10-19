@@ -10,32 +10,54 @@ def lose():
 def start():
     print("Starting game")
 
+    while True:
+        try:
+            print("Enter '1' to play first or '2' to play second")
+
+            play = input("> ")
+
+            if play == "1":
+                print("Playing first")
+
+            elif play == "2":
+                print("Playing second")
+                
+        except:
+            print("Error occured!")
+            break
+
 gameProcess = True
 
+print("Welcome to 21 Number Game!")
+
 while gameProcess == True:
-    print("Welcome to 21 Number Game!")
     try:
         answer = str(input("Do you want to play the game? (Y / N)"))
-    
-    except:
-        print("Only Y or N are allowed!")
-        continue
+        if answer == "Y":
+            start()
 
-    if answer == "Y":
-        start()
-    
-    elif answer == "N":
-        try:
-            quit = str(input("Quit the game? (Y / N)"))
+        elif answer == "N":
+            try:
+                quit = str(input("Quit the game? (Y / N)"))
+            
+            except:
+                print("Only Y or N are allowed!")
+                continue
+
+            if quit == ("Y"):
+                print("You are quitting the game...")
+                time.sleep(2)
+                exit(0)
+
+            elif quit == ("N"):
+                print("Continuing to play...")
+
+            else:
+                print("Only Y or N are allowed!")
         
-        except:
+        else:
             print("Only Y or N are allowed!")
-            continue
 
-        if quit == ("Y"):
-            print("You are quitting the game...")
-            time.sleep(2)
-            exit(0)
-
-        elif quit == ("N"):
-            print("Continuing to play...")
+    except:
+        print("Ending the game")
+        break
